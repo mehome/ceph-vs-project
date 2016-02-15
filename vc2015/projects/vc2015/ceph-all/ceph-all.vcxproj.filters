@@ -96,6 +96,51 @@
     <Filter Include="src\rgw">
       <UniqueIdentifier>{ebe668d3-28ed-4e87-8c1a-6e7da2d1ad41}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\rocksdb">
+      <UniqueIdentifier>{4df6599c-d2ec-49da-9393-c3ac0b8d8a16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test">
+      <UniqueIdentifier>{12a069ca-9fb3-4a6f-8b2d-a326818589a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tools">
+      <UniqueIdentifier>{9de3c4c2-0227-455f-a018-921ebe246e6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\arch">
+      <UniqueIdentifier>{65a2bca4-a922-42fe-86a3-732079ff0ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\auth">
+      <UniqueIdentifier>{dcc04835-e7d8-4a94-b650-d53d1372a15a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\auth\cephx">
+      <UniqueIdentifier>{6efe0dae-a9a5-4784-b709-aa52d545293a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\auth\none">
+      <UniqueIdentifier>{3719a73d-234d-4cd4-9419-0682502e20b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\auth\unknown">
+      <UniqueIdentifier>{2d5637ae-c2f6-45cc-8eae-8d149fbad68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\client">
+      <UniqueIdentifier>{9f6e9da8-6903-4ebe-a98c-e917571a29a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\client\hypertable">
+      <UniqueIdentifier>{0829e841-3db3-45f3-b21d-04dca6cd324c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compressor">
+      <UniqueIdentifier>{d24f7519-fd9b-4784-bd0c-605049fe7e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compressor\snappy">
+      <UniqueIdentifier>{597aa402-acd1-415d-aab8-de302bdfb9ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compressor\zlib">
+      <UniqueIdentifier>{d89ab519-86df-4c7e-93ab-49348d989c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crush">
+      <UniqueIdentifier>{591de1a2-f2c4-4b4c-b698-514066434e5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\messages">
+      <UniqueIdentifier>{2dcf2801-e734-4820-ab24-78530272c23b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\src\librados\AioCompletionImpl.h">
@@ -1358,6 +1403,561 @@
     <ClInclude Include="..\..\..\..\..\src\rgw\rgw_swift.h">
       <Filter>src\rgw</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\arch\intel.h">
+      <Filter>src\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\arch\probe.h">
+      <Filter>src\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\arch\arm.h">
+      <Filter>src\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\KeyRing.h">
+      <Filter>src\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\RotatingKeyRing.h">
+      <Filter>src\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\Auth.h">
+      <Filter>src\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\AuthAuthorizeHandler.h">
+      <Filter>src\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\AuthClientHandler.h">
+      <Filter>src\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\AuthMethodList.h">
+      <Filter>src\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\AuthServiceHandler.h">
+      <Filter>src\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\AuthSessionHandler.h">
+      <Filter>src\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\Crypto.h">
+      <Filter>src\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\cephx\CephxAuthorizeHandler.h">
+      <Filter>src\auth\cephx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\cephx\CephxClientHandler.h">
+      <Filter>src\auth\cephx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\cephx\CephxKeyServer.h">
+      <Filter>src\auth\cephx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\cephx\CephxProtocol.h">
+      <Filter>src\auth\cephx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\cephx\CephxServiceHandler.h">
+      <Filter>src\auth\cephx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\cephx\CephxSessionHandler.h">
+      <Filter>src\auth\cephx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\none\AuthNoneAuthorizeHandler.h">
+      <Filter>src\auth\none</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\none\AuthNoneClientHandler.h">
+      <Filter>src\auth\none</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\none\AuthNoneProtocol.h">
+      <Filter>src\auth\none</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\none\AuthNoneServiceHandler.h">
+      <Filter>src\auth\none</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\none\AuthNoneSessionHandler.h">
+      <Filter>src\auth\none</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\unknown\AuthUnknownAuthorizeHandler.h">
+      <Filter>src\auth\unknown</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\unknown\AuthUnknownClientHandler.h">
+      <Filter>src\auth\unknown</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\unknown\AuthUnknownProtocol.h">
+      <Filter>src\auth\unknown</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\unknown\AuthUnknownServiceHandler.h">
+      <Filter>src\auth\unknown</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\auth\unknown\AuthUnknownSessionHandler.h">
+      <Filter>src\auth\unknown</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\MetaRequest.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\MetaSession.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\ObjecterWriteback.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\posix_acl.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\SyntheticClient.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\Trace.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\UserGroups.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\barrier.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\Client.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\ClientSnapRealm.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\Dentry.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\Dir.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\Fh.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\fuse_ll.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\Inode.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\InodeRef.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\ioctl.h">
+      <Filter>src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\client\hypertable\CephBroker.h">
+      <Filter>src\client\hypertable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\compressor\CompressionPlugin.h">
+      <Filter>src\compressor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\compressor\Compressor.h">
+      <Filter>src\compressor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\compressor\AsyncCompressor.h">
+      <Filter>src\compressor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\compressor\snappy\SnappyCompressor.h">
+      <Filter>src\compressor\snappy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\compressor\zlib\CompressionZlib.h">
+      <Filter>src\compressor\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\crush_compat.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\crush_ln_table.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\CrushCompiler.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\CrushTester.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\CrushTreeDumper.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\CrushWrapper.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\grammar.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\hash.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\mapper.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\types.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\builder.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\crush\crush.h">
+      <Filter>src\crush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDSubOp.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDSubOpReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MPGStats.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MPGStatsAck.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MPing.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MPoolOp.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MPoolOpReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MRecoveryReserve.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MRemoveSnaps.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MRoute.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MStatfs.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MStatfsReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MTimeCheck.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MWatchNotify.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\PaxosServiceMessage.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MAuth.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MAuthReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MBackfillReserve.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MCacheExpire.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MClientCapRelease.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MClientCaps.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MClientLease.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MClientQuota.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MClientReconnect.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MClientReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MClientRequest.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MClientRequestForward.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MClientSession.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MClientSnap.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MCommand.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MCommandReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MDataPing.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MDentryLink.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MDentryUnlink.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MDirUpdate.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MDiscover.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MDiscoverReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportCaps.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportCapsAck.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportDir.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportDirAck.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportDirCancel.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportDirDiscover.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportDirDiscoverAck.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportDirFinish.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportDirNotify.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportDirNotifyAck.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportDirPrep.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MExportDirPrepAck.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MForward.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MGatherCaps.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MGenericMessage.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MGetPoolStats.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MGetPoolStatsReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MHeartbeat.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MInodeFileCaps.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MLock.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MLog.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MLogAck.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSBeacon.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSCacheRejoin.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSFindIno.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSFindInoReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSFragmentNotify.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSLoadTargets.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSMap.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSOpenIno.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSOpenInoReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSResolve.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSResolveAck.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSSlaveRequest.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMDSTableRequest.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonCommand.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonCommandAck.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonElection.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonGetMap.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonGetOSDMap.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonGetVersion.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonGetVersionReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonGlobalID.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonHealth.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonJoin.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonMap.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonMetadata.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonPaxos.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonProbe.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonQuorumService.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonScrub.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonSubscribe.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonSubscribeAck.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MMonSync.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MNop.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDAlive.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDBoot.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDECSubOpRead.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDECSubOpReadReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDECSubOpWrite.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDECSubOpWriteReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDFailure.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDMap.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDMarkMeDown.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDOp.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDOpReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGBackfill.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGCreate.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGInfo.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGLog.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGMissing.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGNotify.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGPull.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGPush.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGPushReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGQuery.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGRemove.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGScan.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGTemp.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPGTrim.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDPing.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDRepOp.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDRepOpReply.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDRepScrub.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\messages\MOSDScrub.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\src\librados\IoCtxImpl.cc">
@@ -2305,6 +2905,138 @@
     <ClCompile Include="..\..\..\..\..\src\rgw\rgw_swift.cc">
       <Filter>src\rgw</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\arch\probe.cc">
+      <Filter>src\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\arch\arm.c">
+      <Filter>src\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\arch\intel.c">
+      <Filter>src\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\KeyRing.cc">
+      <Filter>src\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\RotatingKeyRing.cc">
+      <Filter>src\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\AuthAuthorizeHandler.cc">
+      <Filter>src\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\AuthClientHandler.cc">
+      <Filter>src\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\AuthMethodList.cc">
+      <Filter>src\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\AuthServiceHandler.cc">
+      <Filter>src\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\AuthSessionHandler.cc">
+      <Filter>src\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\Crypto.cc">
+      <Filter>src\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\cephx\CephxAuthorizeHandler.cc">
+      <Filter>src\auth\cephx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\cephx\CephxClientHandler.cc">
+      <Filter>src\auth\cephx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\cephx\CephxKeyServer.cc">
+      <Filter>src\auth\cephx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\cephx\CephxProtocol.cc">
+      <Filter>src\auth\cephx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\cephx\CephxServiceHandler.cc">
+      <Filter>src\auth\cephx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\cephx\CephxSessionHandler.cc">
+      <Filter>src\auth\cephx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\none\AuthNoneAuthorizeHandler.cc">
+      <Filter>src\auth\none</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\auth\unknown\AuthUnknownAuthorizeHandler.cc">
+      <Filter>src\auth\unknown</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\MetaRequest.cc">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\MetaSession.cc">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\posix_acl.cc">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\SyntheticClient.cc">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\test_ioctls.c">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\Trace.cc">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\barrier.cc">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\Client.cc">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\ClientSnapRealm.cc">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\Dentry.cc">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\fuse_ll.cc">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\Inode.cc">
+      <Filter>src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\client\hypertable\CephBroker.cc">
+      <Filter>src\client\hypertable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\compressor\Compressor.cc">
+      <Filter>src\compressor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\compressor\AsyncCompressor.cc">
+      <Filter>src\compressor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\compressor\snappy\CompressionPluginSnappy.cc">
+      <Filter>src\compressor\snappy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\compressor\zlib\CompressionPluginZlib.cc">
+      <Filter>src\compressor\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\compressor\zlib\CompressionZlib.cc">
+      <Filter>src\compressor\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\crush\CrushCompiler.cc">
+      <Filter>src\crush</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\crush\CrushTester.cc">
+      <Filter>src\crush</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\crush\CrushWrapper.cc">
+      <Filter>src\crush</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\crush\hash.c">
+      <Filter>src\crush</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\crush\mapper.c">
+      <Filter>src\crush</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\crush\builder.c">
+      <Filter>src\crush</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\crush\crush.c">
+      <Filter>src\crush</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\src\common\crc32c_intel_fast_asm.S">
@@ -2325,5 +3057,28 @@
     <None Include="..\..\..\..\..\src\os\Makefile.am">
       <Filter>src\os</Filter>
     </None>
+    <None Include="..\..\..\..\..\src\crush\CrushWrapper.i">
+      <Filter>src\crush</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\src\auth\scheme.txt">
+      <Filter>src\auth</Filter>
+    </Text>
+    <Text Include="..\..\..\..\..\src\compressor\CMakeLists.txt">
+      <Filter>src\compressor</Filter>
+    </Text>
+    <Text Include="..\..\..\..\..\src\compressor\snappy\CMakeLists.txt">
+      <Filter>src\compressor\snappy</Filter>
+    </Text>
+    <Text Include="..\..\..\..\..\src\compressor\zlib\CMakeLists.txt">
+      <Filter>src\compressor\zlib</Filter>
+    </Text>
+    <Text Include="..\..\..\..\..\src\crush\old_sample.txt">
+      <Filter>src\crush</Filter>
+    </Text>
+    <Text Include="..\..\..\..\..\src\crush\sample.txt">
+      <Filter>src\crush</Filter>
+    </Text>
   </ItemGroup>
 </Project>
