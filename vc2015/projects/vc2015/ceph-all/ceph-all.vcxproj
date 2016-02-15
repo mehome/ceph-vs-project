@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\src\common\address_helper.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\admin_socket.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\admin_socket_client.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\arch.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\armor.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\AsyncReserver.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\BackTrace.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\bit_vector.hpp" />
+    <ClInclude Include="..\..\..\..\..\src\common\blkdev.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\bloom_filter.hpp" />
+    <ClInclude Include="..\..\..\..\..\src\common\ceph_argparse.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\ceph_context.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\ceph_crypto.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\ceph_crypto_cms.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\ceph_json.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Clock.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\cmdparse.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\code_environment.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\common_init.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\compiler_extensions.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Cond.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\config.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\config_obs.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\config_opts.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\ConfUtils.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\ContextCompletion.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Continuation.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\crc32c_aarch64.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\crc32c_intel_baseline.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\crc32c_intel_fast.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Cycles.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\debug.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\DecayCounter.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\dout.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\entity_name.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\environment.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\errno.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\escape.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\fd.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Finisher.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Formatter.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\HeartbeatMap.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\hex.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\histogram.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\hobject.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Initialize.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\io_priority.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\likely.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\linux_version.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\lockdep.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\LogClient.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\LogEntry.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\lru_map.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\map_cacher.hpp" />
+    <ClInclude Include="..\..\..\..\..\src\common\MemoryModel.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\mime.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\module.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Mutex.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\obj_bencher.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\OutputDataSocket.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\perf_counters.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\pick_address.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\pipe.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\PrebufferedStreambuf.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Preforker.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\PrioritizedQueue.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\QueueRing.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\random_cache.hpp" />
+    <ClInclude Include="..\..\..\..\..\src\common\Readahead.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\RefCountedObj.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\run_cmd.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\RWLock.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\safe_io.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\sctp_crc32.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\secret.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Semaphore.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\sharedptr_registry.hpp" />
+    <ClInclude Include="..\..\..\..\..\src\common\shared_cache.hpp" />
+    <ClInclude Include="..\..\..\..\..\src\common\signal.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\SimpleRNG.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\simple_cache.hpp" />
+    <ClInclude Include="..\..\..\..\..\src\common\simple_spin.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\SloppyCRCMap.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\snap_types.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\static_assert.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\strtol.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\SubProcess.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\sync_filesystem.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\TextTable.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Thread.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Throttle.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\Timer.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\TracepointProvider.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\TrackedOp.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\tracked_int_ptr.hpp" />
+    <ClInclude Include="..\..\..\..\..\src\common\utf8.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\valgrind.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\version.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\WorkQueue.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\xattr.h" />
+    <ClInclude Include="..\..\..\..\..\src\include\rados\buffer.h" />
+    <ClInclude Include="..\..\..\..\..\src\include\rados\crc32c.h" />
+    <ClInclude Include="..\..\..\..\..\src\include\rados\librados.h" />
+    <ClInclude Include="..\..\..\..\..\src\include\rados\librados.hpp" />
+    <ClInclude Include="..\..\..\..\..\src\include\rados\librgw.h" />
+    <ClInclude Include="..\..\..\..\..\src\include\rados\memory.h" />
+    <ClInclude Include="..\..\..\..\..\src\include\rados\page.h" />
+    <ClInclude Include="..\..\..\..\..\src\include\rados\rados_types.h" />
+    <ClInclude Include="..\..\..\..\..\src\include\rados\rados_types.hpp" />
+    <ClInclude Include="..\..\..\..\..\src\librados\AioCompletionImpl.h" />
+    <ClInclude Include="..\..\..\..\..\src\librados\IoCtxImpl.h" />
+    <ClInclude Include="..\..\..\..\..\src\librados\ListObjectImpl.h" />
+    <ClInclude Include="..\..\..\..\..\src\librados\PoolAsyncCompletionImpl.h" />
+    <ClInclude Include="..\..\..\..\..\src\librados\RadosClient.h" />
+    <ClInclude Include="..\..\..\..\..\src\librados\RadosXattrIter.h" />
+    <ClInclude Include="..\..\..\..\..\src\librados\snap_set_diff.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\src\common\address_helper.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\addr_parsing.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\admin_socket.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\admin_socket_client.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\armor.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\assert.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\BackTrace.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\blkdev.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\bloom_filter.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\buffer.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ceph_argparse.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ceph_context.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ceph_crypto.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ceph_crypto_cms.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ceph_frag.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ceph_fs.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ceph_hash.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ceph_json.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ceph_strings.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\Clock.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\cmdparse.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\code_environment.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\common_init.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\config.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ConfUtils.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ContextCompletion.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\crc32c.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\crc32c_aarch64.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\crc32c_intel_baseline.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\crc32c_intel_fast.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\Cycles.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\DecayCounter.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\dout.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\dummy.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\entity_name.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\environment.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\errno.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\escape.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\fd.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\Finisher.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\Formatter.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\HeartbeatMap.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\hex.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\histogram.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\hobject.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\io_priority.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\ipaddr.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\linux_version.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\lockdep.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\LogClient.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\LogEntry.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\MemoryModel.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\mime.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\module.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\Mutex.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\obj_bencher.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\OutputDataSocket.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\page.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\perf_counters.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\pick_address.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\pipe.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\PrebufferedStreambuf.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\Readahead.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\RefCountedObj.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\run_cmd.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\safe_io.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\sctp_crc32.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\secret.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\signal.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\simple_spin.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\SloppyCRCMap.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\snap_types.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\strtol.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\str_list.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\str_map.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\TextTable.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\Thread.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\Throttle.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\Timer.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\TracepointProvider.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\TrackedOp.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\types.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\utf8.c" />
+    <ClCompile Include="..\..\..\..\..\src\common\util.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\version.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\WorkQueue.cc" />
+    <ClCompile Include="..\..\..\..\..\src\common\xattr.c" />
+    <ClCompile Include="..\..\..\..\..\src\librados\IoCtxImpl.cc" />
+    <ClCompile Include="..\..\..\..\..\src\librados\librados.cc" />
+    <ClCompile Include="..\..\..\..\..\src\librados\RadosClient.cc" />
+    <ClCompile Include="..\..\..\..\..\src\librados\RadosXattrIter.cc" />
+    <ClCompile Include="..\..\..\..\..\src\librados\snap_set_diff.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\src\common\crc32c_intel_fast_asm.S" />
+    <None Include="..\..\..\..\..\src\common\crc32c_intel_fast_zero_asm.S" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{396394ED-9960-45D7-910F-B5A20B974AF4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ceph-all</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)lib\vc2015\</OutDir>
+    <TargetName>$(ProjectName)-$(PlatformShortName)-$(Configuration)</TargetName>
+    <IntDir>$(SolutionDir)obj\vc2015\$(PlatformShortName)-$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)lib\vc2015\</OutDir>
+    <TargetName>$(ProjectName)-$(PlatformShortName)-$(Configuration)</TargetName>
+    <IntDir>$(SolutionDir)obj\vc2015\$(PlatformShortName)-$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)lib\vc2015\</OutDir>
+    <TargetName>$(ProjectName)-$(PlatformShortName)-$(Configuration)</TargetName>
+    <IntDir>$(SolutionDir)obj\vc2015\$(PlatformShortName)-$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)lib\vc2015\</OutDir>
+    <TargetName>$(ProjectName)-$(PlatformShortName)-$(Configuration)</TargetName>
+    <IntDir>$(SolutionDir)obj\vc2015\$(PlatformShortName)-$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\src;..\..\..\test;..\..\..\deps;..\..\..\..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>../../../lib/vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\src;..\..\..\test;..\..\..\deps;..\..\..\..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>../../../lib/vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\src;..\..\..\test;..\..\..\deps;..\..\..\..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>../../../lib/vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\src;..\..\..\test;..\..\..\deps;..\..\..\..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>../../../lib/vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
