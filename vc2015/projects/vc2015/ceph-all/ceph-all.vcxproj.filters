@@ -141,6 +141,27 @@
     <Filter Include="src\messages">
       <UniqueIdentifier>{2dcf2801-e734-4820-ab24-78530272c23b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\erasure-code">
+      <UniqueIdentifier>{ccbbe65d-d4f9-4608-8771-7d6f900fabb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rocksdb\utilities">
+      <UniqueIdentifier>{013cbf32-8603-477d-bb42-eb91ca2e0744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rbd_fuse">
+      <UniqueIdentifier>{61e908ec-15e1-4304-b35f-d56f69eac3e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mds">
+      <UniqueIdentifier>{8862f13e-7eac-477d-b4b3-df3e373636cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mds\events">
+      <UniqueIdentifier>{dd464a27-22ea-4ebc-a8d9-d72749e73a4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kv">
+      <UniqueIdentifier>{ac522bae-9686-47f7-94ce-9b284734c811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\key_value_store">
+      <UniqueIdentifier>{82452f29-c7db-48e0-ade8-99b583482921}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\src\librados\AioCompletionImpl.h">
@@ -1958,6 +1979,396 @@
     <ClInclude Include="..\..\..\..\..\src\messages\MOSDScrub.h">
       <Filter>src\messages</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\erasure-code\ErasureCode.h">
+      <Filter>src\erasure-code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\erasure-code\ErasureCodeInterface.h">
+      <Filter>src\erasure-code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\erasure-code\ErasureCodePlugin.h">
+      <Filter>src\erasure-code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\c.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\cache.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\compaction_filter.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\compaction_job_stats.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\comparator.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\convenience.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\db.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\db_dump_tool.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\delete_scheduler.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\env.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\experimental.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\filter_policy.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\flush_block_policy.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\immutable_options.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\iostats_context.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\iterator.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\ldb_tool.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\listener.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\memtablerep.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\merge_operator.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\metadata.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\options.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\perf_context.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\perf_level.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\rate_limiter.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\slice.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\slice_transform.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\snapshot.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\sst_dump_tool.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\sst_file_writer.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\statistics.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\status.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\table.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\table_properties.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\thread_status.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\transaction_log.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\types.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\universal_compaction.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\version.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\write_batch.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\write_batch_base.h">
+      <Filter>src\rocksdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\backupable_db.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\checkpoint.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\convenience.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\db_ttl.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\document_db.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\flashcache.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\geo_db.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\info_log_finder.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\json_document.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\leveldb_options.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\optimistic_transaction_db.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\spatial_db.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\stackable_db.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\table_properties_collectors.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\transaction.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\transaction_db.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\transaction_db_mutex.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\utility_db.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rocksdb\include\rocksdb\utilities\write_batch_with_index.h">
+      <Filter>src\rocksdb\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\Beacon.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\Capability.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\CDentry.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\CDir.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\CInode.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\flock.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\inode_backtrace.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\InoTable.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\JournalPointer.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\LocalLock.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\Locker.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\locks.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\LogEvent.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\LogSegment.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDBalancer.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDCache.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDLog.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\mds_table_types.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDSAuthCaps.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDSContext.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDSContinuation.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDSDaemon.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDSMap.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDSRank.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDSTable.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDSTableClient.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\MDSTableServer.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\mdstypes.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\Migrator.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\Mutation.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\RecoveryQueue.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\ScatterLock.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\ScrubHeader.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\ScrubStack.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\Server.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\SessionMap.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\SimpleLock.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\snap.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\SnapClient.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\SnapRealm.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\SnapServer.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\StrayManager.h">
+      <Filter>src\mds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\ECommitted.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\EExport.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\EFragment.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\EImportFinish.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\EImportStart.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\EMetaBlob.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\ENoOp.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\EOpen.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\EResetJournal.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\ESession.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\ESessions.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\ESlaveUpdate.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\ESubtreeMap.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\ETableClient.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\ETableServer.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\mds\events\EUpdate.h">
+      <Filter>src\mds\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\kv\KeyValueDB.h">
+      <Filter>src\kv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\kv\KineticStore.h">
+      <Filter>src\kv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\kv\LevelDBStore.h">
+      <Filter>src\kv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\kv\RocksDBStore.h">
+      <Filter>src\kv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\key_value_store\kvs_arg_types.h">
+      <Filter>src\key_value_store</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\key_value_store\key_value_structure.h">
+      <Filter>src\key_value_store</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\key_value_store\kv_flat_btree_async.h">
+      <Filter>src\key_value_store</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\acconfig.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\ceph_ver.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\src\librados\IoCtxImpl.cc">
@@ -3037,6 +3448,180 @@
     <ClCompile Include="..\..\..\..\..\src\crush\crush.c">
       <Filter>src\crush</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\erasure-code\ErasureCode.cc">
+      <Filter>src\erasure-code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\erasure-code\ErasureCodePlugin.cc">
+      <Filter>src\erasure-code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rbd_fuse\rbd-fuse.cc">
+      <Filter>src\rbd_fuse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\Beacon.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\Capability.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\CDentry.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\CDir.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\CInode.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\flock.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\inode_backtrace.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\InoTable.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\journal.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\JournalPointer.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\Locker.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\locks.c">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\LogEvent.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\MDBalancer.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\MDCache.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\MDLog.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\MDSAuthCaps.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\MDSContext.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\MDSDaemon.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\MDSMap.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\MDSRank.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\MDSTable.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\MDSTableClient.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\MDSTableServer.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\mdstypes.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\Migrator.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\Mutation.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\RecoveryQueue.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\ScrubStack.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\Server.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\SessionMap.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\SimpleLock.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\snap.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\SnapRealm.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\SnapServer.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\mds\StrayManager.cc">
+      <Filter>src\mds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\kv\KeyValueDB.cc">
+      <Filter>src\kv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\kv\KineticStore.cc">
+      <Filter>src\kv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\kv\LevelDBStore.cc">
+      <Filter>src\kv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\kv\RocksDBStore.cc">
+      <Filter>src\kv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\key_value_store\cls_kvs.cc">
+      <Filter>src\key_value_store</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\key_value_store\kv_flat_btree_async.cc">
+      <Filter>src\key_value_store</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\btrfs_ioc_test.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\ceph_fuse.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\ceph_mds.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\ceph_mon.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\ceph_osd.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\ceph_syn.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\ceph_ver.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\cephfs.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\cls_acl.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\cls_crypto.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\krbd.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\libcephfs.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librados-config.cc">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\src\common\crc32c_intel_fast_asm.S">
@@ -3079,6 +3664,12 @@
     </Text>
     <Text Include="..\..\..\..\..\src\crush\sample.txt">
       <Filter>src\crush</Filter>
+    </Text>
+    <Text Include="..\..\..\..\..\src\erasure-code\CMakeLists.txt">
+      <Filter>src\erasure-code</Filter>
+    </Text>
+    <Text Include="..\..\..\..\..\src\kv\CMakeLists.txt">
+      <Filter>src\kv</Filter>
     </Text>
   </ItemGroup>
 </Project>
