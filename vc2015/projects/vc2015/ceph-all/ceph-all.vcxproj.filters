@@ -21,6 +21,81 @@
     <Filter Include="src\common">
       <UniqueIdentifier>{c5df51ad-24bd-4c3a-9f0f-470488e8d93f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\include\cephfs">
+      <UniqueIdentifier>{6b89d4db-b0bc-41d5-969c-ed26227a297e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\radosstriper">
+      <UniqueIdentifier>{bb8d94c6-af1f-4ef2-a170-0a0ac33a81c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\rbd">
+      <UniqueIdentifier>{981280e5-aef7-48a5-9066-4fabd08c9775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\global">
+      <UniqueIdentifier>{238add9f-d3c6-4d5b-9a5e-94cff0834044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\journal">
+      <UniqueIdentifier>{e130536a-5f90-4fa4-b4f4-9a66c9de66e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\librbd">
+      <UniqueIdentifier>{7c49bc26-2044-4016-bff0-e3e00bbbf502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\librbd\journal">
+      <UniqueIdentifier>{620402c6-9510-49fb-b803-0f41f35108d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\librbd\object_map">
+      <UniqueIdentifier>{23e4a0a8-2f7d-446e-9bdf-ac2cfbe7d45b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\librbd\operation">
+      <UniqueIdentifier>{317e0cf9-326e-471c-a3df-3dfdfbeb49d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\librbd\image">
+      <UniqueIdentifier>{03492563-6e6e-4256-847b-fd504dbc64c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\librbd\exclusive_lock">
+      <UniqueIdentifier>{8f97094f-9d98-43b0-afea-6b9fa2b3e7f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\log">
+      <UniqueIdentifier>{ceac6aa1-3e6e-4b07-9b0b-cbc00f710085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\msg">
+      <UniqueIdentifier>{ee20a62f-d5b0-45cf-926f-5eafab91f464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\msg\async">
+      <UniqueIdentifier>{76e61ae6-ff8b-4a5d-a290-19882311099d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\msg\simple">
+      <UniqueIdentifier>{afc9daca-f76e-48d5-b9eb-79479eeee59f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\msg\xio">
+      <UniqueIdentifier>{1baaab02-1886-4498-94f2-bf47cbfb75b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os">
+      <UniqueIdentifier>{41118bc0-9b5b-4928-978d-ac67f03d5b35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os\fs">
+      <UniqueIdentifier>{84872f5b-227b-4d81-ab54-0be6b720667f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os\filestore">
+      <UniqueIdentifier>{77b8162a-cfdf-4b9c-8156-37ebd5cb9fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os\bluestore">
+      <UniqueIdentifier>{606b2018-a05e-4ba4-80f7-3b912684955c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os\kstore">
+      <UniqueIdentifier>{d760e183-6605-4f7d-871f-bd4b9e596a7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os\memstore">
+      <UniqueIdentifier>{19f0fd4a-925c-4ecb-a8d4-1fda4ba3ff0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\osd">
+      <UniqueIdentifier>{d41054d5-237d-4fe9-a557-cec5eb26cec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\osdc">
+      <UniqueIdentifier>{39908834-5945-445f-a7b4-4cf76bba4507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rgw">
+      <UniqueIdentifier>{ebe668d3-28ed-4e87-8c1a-6e7da2d1ad41}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\src\librados\AioCompletionImpl.h">
@@ -371,6 +446,918 @@
     <ClInclude Include="..\..\..\..\..\src\common\xattr.h">
       <Filter>src\common</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\cephfs\libcephfs.h">
+      <Filter>src\include\cephfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\radosstriper\libradosstriper.h">
+      <Filter>src\include\radosstriper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\radosstriper\libradosstriper.hpp">
+      <Filter>src\include\radosstriper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\rbd\features.h">
+      <Filter>src\include\rbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\rbd\librbd.h">
+      <Filter>src\include\rbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\rbd\librbd.hpp">
+      <Filter>src\include\rbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\rbd\object_map_types.h">
+      <Filter>src\include\rbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\addr_parsing.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\assert.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\atomic.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\bitmapper.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\blobhash.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\buffer.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\buffer_fwd.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\byteorder.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\ceph_features.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\ceph_frag.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\ceph_fs.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\ceph_hash.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\cmp.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\color.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\compact_map.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\compact_set.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\compat.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\CompatSet.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\Context.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\crc32c.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\Distribution.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\elist.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\encoding.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\err.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\error.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\event_type.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\filepath.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\frag.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\hash.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\inline_memory.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\int_types.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\intarith.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\interval_set.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\ipaddr.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\krbd.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\linux_fiemap.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\lru.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\memory.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\msgr.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\object.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\on_exit.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\page.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\rados.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\rangeset.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\rbd_types.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\sock_compat.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\Spinlock.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\stat.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\statlite.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\str_list.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\str_map.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\stringify.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\timegm.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\types.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\unordered_map.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\unordered_set.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\util.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\utime.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\uuid.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\include\xlist.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\global\global_context.h">
+      <Filter>src\global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\global\global_init.h">
+      <Filter>src\global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\global\pidfile.h">
+      <Filter>src\global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\global\signal_handler.h">
+      <Filter>src\global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\Journaler.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\JournalMetadata.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\JournalPlayer.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\JournalRecorder.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\JournalTrimmer.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\ObjectPlayer.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\ObjectRecorder.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\ReplayEntry.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\ReplayHandler.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\Utils.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\AsyncOpTracker.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\Entry.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\Future.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\journal\FutureImpl.h">
+      <Filter>src\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\AioCompletion.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\AioImageRequest.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\AioImageRequestWQ.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\AioObjectRequest.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\AsyncObjectThrottle.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\AsyncOperation.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\AsyncRequest.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\CopyupRequest.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\DiffIterate.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\ExclusiveLock.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\ImageCtx.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\ImageState.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\ImageWatcher.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\internal.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\Journal.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\LibrbdAdminSocketHook.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\LibrbdWriteback.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\ObjectMap.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\Operations.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\parent_types.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\SnapInfo.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\TaskFinisher.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\type.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\Utils.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\WatchNotifyTypes.h">
+      <Filter>src\librbd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\journal\Replay.h">
+      <Filter>src\librbd\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\journal\Types.h">
+      <Filter>src\librbd\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\object_map\ResizeRequest.h">
+      <Filter>src\librbd\object_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\object_map\SnapshotCreateRequest.h">
+      <Filter>src\librbd\object_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\object_map\SnapshotRemoveRequest.h">
+      <Filter>src\librbd\object_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\object_map\SnapshotRollbackRequest.h">
+      <Filter>src\librbd\object_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\object_map\UnlockRequest.h">
+      <Filter>src\librbd\object_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\object_map\UpdateRequest.h">
+      <Filter>src\librbd\object_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\object_map\InvalidateRequest.h">
+      <Filter>src\librbd\object_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\object_map\LockRequest.h">
+      <Filter>src\librbd\object_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\object_map\RefreshRequest.h">
+      <Filter>src\librbd\object_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\object_map\Request.h">
+      <Filter>src\librbd\object_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\FlattenRequest.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\RebuildObjectMapRequest.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\RenameRequest.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\Request.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\ResizeRequest.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\SnapshotCreateRequest.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\SnapshotProtectRequest.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\SnapshotRemoveRequest.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\SnapshotRenameRequest.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\SnapshotRollbackRequest.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\SnapshotUnprotectRequest.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\operation\TrimRequest.h">
+      <Filter>src\librbd\operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\image\CloseRequest.h">
+      <Filter>src\librbd\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\image\OpenRequest.h">
+      <Filter>src\librbd\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\image\RefreshParentRequest.h">
+      <Filter>src\librbd\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\image\RefreshRequest.h">
+      <Filter>src\librbd\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\image\SetSnapRequest.h">
+      <Filter>src\librbd\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\exclusive_lock\AcquireRequest.h">
+      <Filter>src\librbd\exclusive_lock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\librbd\exclusive_lock\ReleaseRequest.h">
+      <Filter>src\librbd\exclusive_lock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\log\Log.h">
+      <Filter>src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\log\SubsystemMap.h">
+      <Filter>src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\log\Entry.h">
+      <Filter>src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\log\EntryQueue.h">
+      <Filter>src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\log\Graylog.h">
+      <Filter>src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\Connection.h">
+      <Filter>src\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\Dispatcher.h">
+      <Filter>src\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\Message.h">
+      <Filter>src\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\Messenger.h">
+      <Filter>src\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\msg_types.h">
+      <Filter>src\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\SimplePolicyMessenger.h">
+      <Filter>src\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\async\AsyncConnection.h">
+      <Filter>src\msg\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\async\AsyncMessenger.h">
+      <Filter>src\msg\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\async\Event.h">
+      <Filter>src\msg\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\async\EventEpoll.h">
+      <Filter>src\msg\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\async\EventKqueue.h">
+      <Filter>src\msg\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\async\EventSelect.h">
+      <Filter>src\msg\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\async\net_handler.h">
+      <Filter>src\msg\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\simple\DispatchQueue.h">
+      <Filter>src\msg\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\simple\Pipe.h">
+      <Filter>src\msg\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\simple\PipeConnection.h">
+      <Filter>src\msg\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\simple\SimpleMessenger.h">
+      <Filter>src\msg\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\simple\Accepter.h">
+      <Filter>src\msg\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\xio\DispatchStrategy.h">
+      <Filter>src\msg\xio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\xio\FastStrategy.h">
+      <Filter>src\msg\xio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\xio\QueueStrategy.h">
+      <Filter>src\msg\xio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\xio\XioConnection.h">
+      <Filter>src\msg\xio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\xio\XioInSeq.h">
+      <Filter>src\msg\xio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\xio\XioMessenger.h">
+      <Filter>src\msg\xio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\xio\XioMsg.h">
+      <Filter>src\msg\xio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\xio\XioPool.h">
+      <Filter>src\msg\xio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\xio\XioPortal.h">
+      <Filter>src\msg\xio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\msg\xio\XioSubmit.h">
+      <Filter>src\msg\xio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\FuseStore.h">
+      <Filter>src\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\ObjectMap.h">
+      <Filter>src\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\ObjectStore.h">
+      <Filter>src\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\fs\btrfs_ioctl.h">
+      <Filter>src\os\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\fs\FS.h">
+      <Filter>src\os\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\fs\XFS.h">
+      <Filter>src\os\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\fs\ZFS.h">
+      <Filter>src\os\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\BtrfsFileStoreBackend.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\chain_xattr.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\CollectionIndex.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\DBObjectMap.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\FDCache.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\FileJournal.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\FileStore.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\GenericFileStoreBackend.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\HashIndex.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\IndexManager.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\Journal.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\JournalingObjectStore.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\LFNIndex.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\SequencerPosition.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\WBThrottle.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\XfsFileStoreBackend.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\filestore\ZFSFileStoreBackend.h">
+      <Filter>src\os\filestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\kstore\KStore.h">
+      <Filter>src\os\kstore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\kstore\kstore_types.h">
+      <Filter>src\os\kstore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\kstore\kv.h">
+      <Filter>src\os\kstore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\memstore\MemStore.h">
+      <Filter>src\os\memstore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\memstore\PageSet.h">
+      <Filter>src\os\memstore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\bluefs_types.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\BlueRocksEnv.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\BlueStore.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\bluestore_types.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\FreelistManager.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\KernelDevice.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\kv.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\NVMEDevice.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\StupidAllocator.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\Allocator.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\BlockDevice.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\os\bluestore\BlueFS.h">
+      <Filter>src\os\bluestore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\ECMsgTypes.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\ECTransaction.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\ECUtil.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\HitSet.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\ObjectVersioner.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\OpRequest.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\OSD.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\osd_types.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\OSDCap.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\OSDMap.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\PG.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\PGBackend.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\PGLog.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\ReplicatedBackend.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\ReplicatedPG.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\SnapMapper.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\TierAgentState.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\Watch.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\ClassHandler.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osd\ECBackend.h">
+      <Filter>src\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osdc\Journaler.h">
+      <Filter>src\osdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osdc\ObjectCacher.h">
+      <Filter>src\osdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osdc\Objecter.h">
+      <Filter>src\osdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osdc\Striper.h">
+      <Filter>src\osdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osdc\WritebackHandler.h">
+      <Filter>src\osdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\osdc\Filer.h">
+      <Filter>src\osdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_swift_auth.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_tools.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_usage.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_user.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_website.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_xml.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_acl.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_acl_s3.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_acl_swift.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_auth_s3.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_basic_types.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_bucket.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_cache.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_civetweb.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_civetweb_log.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_client_io.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_common.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_cors.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_cors_s3.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_cors_swift.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_fcgi.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_file.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_formats.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_frontend.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_gc.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_http_client.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_http_errors.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_keystone.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_lib.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_lib_frontend.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_loadgen.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_log.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_metadata.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_multi.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_multi_del.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_object_expirer_core.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_op.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_orphan.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_os_lib.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_policy_s3.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_process.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_quota.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rados.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_replica_log.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_request.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_resolve.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_admin.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_bucket.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_client.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_config.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_conn.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_log.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_metadata.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_opstate.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_replica_log.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_s3.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_s3website.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_swift.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_usage.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_rest_user.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_string.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\rgw\rgw_swift.h">
+      <Filter>src\rgw</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\src\librados\IoCtxImpl.cc">
@@ -649,6 +1636,675 @@
     <ClCompile Include="..\..\..\..\..\src\common\xattr.c">
       <Filter>src\common</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\global\global_context.cc">
+      <Filter>src\global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\global\global_init.cc">
+      <Filter>src\global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\global\pidfile.cc">
+      <Filter>src\global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\global\signal_handler.cc">
+      <Filter>src\global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\Journaler.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\JournalMetadata.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\JournalPlayer.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\JournalRecorder.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\JournalTrimmer.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\ObjectPlayer.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\ObjectRecorder.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\Utils.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\AsyncOpTracker.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\Entry.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\Future.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\journal\FutureImpl.cc">
+      <Filter>src\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\AioCompletion.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\AioImageRequest.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\AioImageRequestWQ.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\AioObjectRequest.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\AsyncObjectThrottle.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\AsyncOperation.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\AsyncRequest.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\CopyupRequest.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\DiffIterate.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\ExclusiveLock.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\ImageCtx.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\ImageState.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\ImageWatcher.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\internal.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\Journal.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\librbd.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\LibrbdAdminSocketHook.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\LibrbdWriteback.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\ObjectMap.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\Operations.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\Utils.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\WatchNotifyTypes.cc">
+      <Filter>src\librbd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\journal\Replay.cc">
+      <Filter>src\librbd\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\journal\Types.cc">
+      <Filter>src\librbd\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\object_map\ResizeRequest.cc">
+      <Filter>src\librbd\object_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\object_map\SnapshotCreateRequest.cc">
+      <Filter>src\librbd\object_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\object_map\SnapshotRemoveRequest.cc">
+      <Filter>src\librbd\object_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\object_map\SnapshotRollbackRequest.cc">
+      <Filter>src\librbd\object_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\object_map\UnlockRequest.cc">
+      <Filter>src\librbd\object_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\object_map\UpdateRequest.cc">
+      <Filter>src\librbd\object_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\object_map\InvalidateRequest.cc">
+      <Filter>src\librbd\object_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\object_map\LockRequest.cc">
+      <Filter>src\librbd\object_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\object_map\RefreshRequest.cc">
+      <Filter>src\librbd\object_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\object_map\Request.cc">
+      <Filter>src\librbd\object_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\FlattenRequest.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\RebuildObjectMapRequest.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\RenameRequest.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\Request.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\ResizeRequest.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\SnapshotCreateRequest.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\SnapshotProtectRequest.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\SnapshotRemoveRequest.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\SnapshotRenameRequest.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\SnapshotRollbackRequest.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\SnapshotUnprotectRequest.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\operation\TrimRequest.cc">
+      <Filter>src\librbd\operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\image\CloseRequest.cc">
+      <Filter>src\librbd\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\image\OpenRequest.cc">
+      <Filter>src\librbd\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\image\RefreshParentRequest.cc">
+      <Filter>src\librbd\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\image\RefreshRequest.cc">
+      <Filter>src\librbd\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\image\SetSnapRequest.cc">
+      <Filter>src\librbd\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\exclusive_lock\AcquireRequest.cc">
+      <Filter>src\librbd\exclusive_lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\librbd\exclusive_lock\ReleaseRequest.cc">
+      <Filter>src\librbd\exclusive_lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\log\Log.cc">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\log\SubsystemMap.cc">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\log\test.cc">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\log\Graylog.cc">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\Message.cc">
+      <Filter>src\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\Messenger.cc">
+      <Filter>src\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\msg_types.cc">
+      <Filter>src\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\async\AsyncConnection.cc">
+      <Filter>src\msg\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\async\AsyncMessenger.cc">
+      <Filter>src\msg\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\async\Event.cc">
+      <Filter>src\msg\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\async\EventEpoll.cc">
+      <Filter>src\msg\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\async\EventKqueue.cc">
+      <Filter>src\msg\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\async\EventSelect.cc">
+      <Filter>src\msg\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\async\net_handler.cc">
+      <Filter>src\msg\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\simple\Pipe.cc">
+      <Filter>src\msg\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\simple\PipeConnection.cc">
+      <Filter>src\msg\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\simple\SimpleMessenger.cc">
+      <Filter>src\msg\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\simple\Accepter.cc">
+      <Filter>src\msg\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\simple\DispatchQueue.cc">
+      <Filter>src\msg\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\xio\QueueStrategy.cc">
+      <Filter>src\msg\xio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\xio\XioConnection.cc">
+      <Filter>src\msg\xio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\xio\XioMessenger.cc">
+      <Filter>src\msg\xio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\xio\XioMsg.cc">
+      <Filter>src\msg\xio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\xio\XioPool.cc">
+      <Filter>src\msg\xio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\msg\xio\XioPortal.cc">
+      <Filter>src\msg\xio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\FuseStore.cc">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\ObjectStore.cc">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\Transaction.cc">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\fs\FS.cc">
+      <Filter>src\os\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\fs\XFS.cc">
+      <Filter>src\os\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\fs\ZFS.cc">
+      <Filter>src\os\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\chain_xattr.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\DBObjectMap.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\FileJournal.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\FileStore.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\GenericFileStoreBackend.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\HashIndex.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\IndexManager.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\JournalingObjectStore.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\LFNIndex.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\WBThrottle.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\XfsFileStoreBackend.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\ZFSFileStoreBackend.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\filestore\BtrfsFileStoreBackend.cc">
+      <Filter>src\os\filestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\kstore\KStore.cc">
+      <Filter>src\os\kstore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\kstore\kstore_types.cc">
+      <Filter>src\os\kstore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\kstore\kv.cc">
+      <Filter>src\os\kstore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\memstore\MemStore.cc">
+      <Filter>src\os\memstore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\bluefs_tool.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\bluefs_types.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\BlueRocksEnv.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\BlueStore.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\bluestore_types.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\FreelistManager.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\KernelDevice.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\kv.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\NVMEDevice.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\StupidAllocator.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\Allocator.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\BlockDevice.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\os\bluestore\BlueFS.cc">
+      <Filter>src\os\bluestore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\ECMsgTypes.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\ECTransaction.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\ECUtil.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\HitSet.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\OpRequest.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\OSD.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\osd_types.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\OSDCap.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\OSDMap.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\PG.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\PGBackend.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\PGLog.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\ReplicatedBackend.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\ReplicatedPG.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\SnapMapper.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\Watch.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\ClassHandler.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osd\ECBackend.cc">
+      <Filter>src\osd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osdc\ObjectCacher.cc">
+      <Filter>src\osdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osdc\Objecter.cc">
+      <Filter>src\osdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osdc\Striper.cc">
+      <Filter>src\osdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osdc\Filer.cc">
+      <Filter>src\osdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\osdc\Journaler.cc">
+      <Filter>src\osdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_swift_auth.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_tools.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_usage.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_user.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_website.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_xml.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_xml_enc.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\librgw.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_acl.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_acl_s3.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_acl_swift.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_aclparser.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_admin.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_auth_s3.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_basic_types.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_bucket.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_cache.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_civetweb.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_civetweb_frontend.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_civetweb_log.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_client_io.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_common.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_cors.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_cors_s3.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_dencoder.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_env.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_fcgi.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_fcgi_process.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_file.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_formats.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_frontend.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_gc.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_http_client.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_json_enc.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_jsonparser.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_keystone.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_loadgen.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_loadgen_process.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_log.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_main.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_metadata.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_multi.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_multi_del.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_multiparser.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_object_expirer.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_object_expirer_core.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_op.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_orphan.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_os_lib.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_policy_s3.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_process.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_quota.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rados.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_replica_log.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_request.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_resolve.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_bucket.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_client.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_config.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_conn.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_log.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_metadata.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_opstate.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_replica_log.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_s3.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_swift.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_usage.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_rest_user.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\rgw\rgw_swift.cc">
+      <Filter>src\rgw</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\src\common\crc32c_intel_fast_asm.S">
@@ -656,6 +2312,18 @@
     </None>
     <None Include="..\..\..\..\..\src\common\crc32c_intel_fast_zero_asm.S">
       <Filter>src\common</Filter>
+    </None>
+    <None Include="..\..\..\..\..\src\include\config-h.in.cmake">
+      <Filter>src\include</Filter>
+    </None>
+    <None Include="..\..\..\..\..\src\include\Makefile.am">
+      <Filter>src\include</Filter>
+    </None>
+    <None Include="..\..\..\..\..\src\msg\Makefile.am">
+      <Filter>src\msg</Filter>
+    </None>
+    <None Include="..\..\..\..\..\src\os\Makefile.am">
+      <Filter>src\os</Filter>
     </None>
   </ItemGroup>
 </Project>
